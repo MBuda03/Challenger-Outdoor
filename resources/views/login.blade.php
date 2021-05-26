@@ -4,15 +4,16 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3" style="margin-top: 30px; margin-bottom: 30px;">
-                <form>
+                <form action="login" method="POST">
+                    @csrf
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                        <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
 {{--                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>--}}
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Sifre</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Sifre">
+                        <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Sifre">
                     </div>
                     <div class="form-check">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
